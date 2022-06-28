@@ -478,9 +478,9 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"// pm.test(\"Verify status code 204 after deleting project\", function () {\r",
-							"//     pm.response.to.have.status(204);\r",
-							"// });"
+							"pm.test(\"Verify status code 403 after deleting project\", function () {\r",
+							"    pm.response.to.have.status(403);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
